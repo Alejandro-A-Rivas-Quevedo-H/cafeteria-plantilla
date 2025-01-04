@@ -1,0 +1,113 @@
+
+
+/* Asegura que el contenido no se desborde */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho/alto */
+  }
+  
+  /* Menú desplegable */
+  .caucel-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 300px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out; /* Animación suave */
+    overflow: hidden; /* Previene el desbordamiento del contenido */
+  }
+  
+  /* Activación del menú */
+  .caucel-menu.active {
+    right: 0; 
+  }
+  
+  /* Lista de enlaces */
+  .caucel-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los enlaces */
+    width: 100%; /* Asegura que la lista ocupe todo el ancho disponible */
+  }
+  
+  /* Estilo de los enlaces */
+  .caucel-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block; /* Asegura que los enlaces sean bloques completos */
+    width: 100%; /* Los enlaces ocupan todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro de los enlaces */
+  }
+  
+  /* Efecto al pasar el ratón sobre los enlaces */
+  .caucel-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Botón para abrir el menú */
+  .caucel-menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1001;
+  }
+  
+  /* Botón para cerrar el menú */
+  .caucel-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    display: none; /* Inicialmente oculto */
+    z-index: 1002;
+  }
+  
+  /* Mostrar el botón de cerrar solo cuando el menú está activo */
+  .caucel-menu.active .caucel-menu-close {
+    display: block;
+  }
+  
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .caucel-menu.active {
+      width: 35%; /* Reduce el ancho en pantallas pequeñas */
+    }
+    .caucel-menu ul {
+      gap: 10px; /* Reduce el espaciado entre los enlaces */
+    }
+  
+    .caucel-menu-toggle {
+      padding: 8px;
+      font-size: 16px;
+    }
+  
+    .caucel-menu ul li a {
+      font-size: 16px;
+    }
+  }
+  

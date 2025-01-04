@@ -1,0 +1,94 @@
+/* Estilos para la presentación */
+.caucel-presentation {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px; /* Para evitar que el contenido se salga en pantallas más pequeñas */
+}
+
+.caucel-presentation-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.caucel-presentation-content {
+    z-index: 1;
+    max-width: 90%;
+    padding: 0 10px; /* Evita que el contenido se desborde */
+}
+
+/* Estilos del logo */
+.caucel-logo {
+    max-width: 200px; /* Ajusta el tamaño máximo del logo */
+    margin-bottom: 20px; /* Espacio entre el logo y el título */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra el logo horizontalmente */
+}
+
+/* Título de la presentación */
+.caucel-presentation-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: 80px 0 0; /* Ajustar márgenes */
+    line-height: 1.2;
+}
+
+/* Texto de la presentación */
+.caucel-presentation-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 20px auto 0;
+    max-width: 699px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+/* Para laptops y tablets */
+@media (max-width: 1024px) {
+    .caucel-presentation-title {
+        font-size: 2.5rem;
+        margin: 80px 0 0;
+    }
+
+    .caucel-presentation-text {
+        font-size: 0.9rem;
+        max-width: 600px;
+    }
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+    .caucel-presentation-title {
+        font-size: 2rem;
+        margin: 60px 0 0;
+    }
+
+    .caucel-presentation-text {
+        font-size: 0.85rem;
+        max-width: 550px;
+    }
+}
+
+/* Para teléfonos */
+@media (max-width: 480px) {
+    .caucel-presentation-title {
+        font-size: 1.5rem;
+        margin: 40px 0 0;
+    }
+
+    .caucel-presentation-text {
+        font-size: 0.8rem;
+        max-width: 400px;
+    }
+}

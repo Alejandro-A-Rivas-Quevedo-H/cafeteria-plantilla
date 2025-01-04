@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora el menú de Cafetería Caucel, donde encontrarás las mejores opciones en café y repostería artesanal en la ciudad.">
+    <meta name="keywords" content="Cafetería Caucel, café, repostería, menú, Caucel, café artesanal">
+    <meta name="author" content="Cafetería Caucel">
+    <title>Caféteria - Menú</title>
+     
+    <!-- FAVICON -->
+    <link rel="icon" href="./restuarant-logo.ico" type="image/x-icon">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./style/header-caucel.css">
+    <link rel="stylesheet" href="./style/presentation-caucel.css">
+    <link rel="stylesheet" href="./style/about-caucel.css">
+
+    <!-- FUENTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- SIMBOLOS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+
+</head>
+
+<body>
+
+    <button class="caucel-menu-toggle" id="menu-toggle">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+    <nav class="caucel-menu" id="caucel-menu">
+        <button class="caucel-menu-close" id="menu-close">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="caucel-presentation">
+        <video class="caucel-presentation-video" autoplay muted loop>
+            <source src="./archivos/video/SPOT CAFÉ ☕️ .mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="caucel-presentation-content">
+            <!-- Logo arriba del título -->
+            <img src="./archivos/img/restuarant-logo.png" alt="Logo de Cafetería Caucel" class="caucel-logo">
+            <h1 class="caucel-presentation-title">Bienvenido a Cafetería Caucel</h1>
+            <p class="caucel-presentation-text">Disfruta de la experiencia única del mejor café artesanal y repostería hecha con pasión. ¡Ven a visitarnos hoy!</p>
+        </div>
+    </section>
+
+    <!-- ABOUT US-->
+    <section class="caucel-about-us">
+        <h2 class="about-us-subtitle">Sobre Nosotros</h2>
+        <h1 class="about-us-title">Descubre Nuestra Historia</h1>
+        <div class="about-us-gallery">
+            <div class="about-us-item">
+                <img src="./archivos/img/gallery1.jpg" alt="Historia del café" class="about-us-image">
+            </div>
+            <div class="about-us-item">
+                <h3 class="about-us-section-title">Historia</h3>
+                <p class="about-us-text">Nuestra historia comienza con la pasión por el café artesanal y la repostería de calidad. Descubre cómo nos convertimos en un referente en la ciudad.</p>
+                <button class="about-us-button">Leer Más</button>
+            </div>
+            <div class="about-us-item">
+                <img src="./archivos/img/gallery2.jpg" alt="Proceso artesanal" class="about-us-image">
+            </div>
+            <div class="about-us-item">
+                <h3 class="about-us-section-title">Filosofía</h3>
+                <p class="about-us-text">Creemos en la importancia de ofrecer productos frescos, locales y hechos con amor. Únete a nuestra comunidad.</p>
+                <button class="about-us-button">Leer Más</button>
+            </div>
+            <div class="about-us-item">
+                <img src="./archivos/img/gallery3.jpg" alt="Ambiente único" class="about-us-image">
+            </div>
+            <div class="about-us-item">
+                <h3 class="about-us-section-title">Compromiso</h3>
+                <p class="about-us-text">Nos esforzamos por brindar un espacio acogedor y experiencias inolvidables para nuestros clientes.</p>
+                <button class="about-us-button">Leer Más</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
