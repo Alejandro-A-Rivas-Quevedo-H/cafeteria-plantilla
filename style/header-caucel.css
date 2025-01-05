@@ -2,7 +2,7 @@
 
 /* Asegura que el contenido no se desborde */
 * {
-    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho/alto */
+    box-sizing: border-box;
   }
   
   /* Menú desplegable */
