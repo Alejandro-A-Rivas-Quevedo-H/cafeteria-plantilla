@@ -1,0 +1,247 @@
+/* Estilos para la sección de eventos */
+.caucel-events {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.events-header {
+    margin-bottom: 40px;
+}
+
+.events-subtitle {
+    font-size: 1rem;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.events-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-day {
+    display: block;
+    font-size: 3rem;
+    color: #000;
+}
+
+.event-month {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 15px 0 0;
+}
+
+.events-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #FFFFFF00;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.events-button:hover {
+    background-color: #18181a;
+    color: white;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .events-title {
+        font-size: 2rem;
+    }
+
+    .event-date {
+        font-size: 1.8rem;
+    }
+
+    .event-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-title {
+        font-size: 1.8rem;
+    }
+
+    .events-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .events-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Estilos generales */
+#events-slider {
+    margin-top: 70px;
+    text-align: center;
+    position: relative;
+}
+.caucel-slider-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+.caucel-slide {
+    flex: 0 0 100%;
+    display: none;
+    position: relative;
+}
+.caucel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 500px; /* Altura máxima para pantallas grandes */
+}
+.caucel-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.caucel-slide-content h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+.caucel-slide-content p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+.caucel-slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.caucel-slider-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    pointer-events: auto;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.caucel-slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos responsive */
+
+/* Pantallas grandes (laptops y monitores) */
+@media (max-width: 1200px) {
+    .caucel-slide img {
+        max-height: 500px; /* Reducir altura en laptops */
+    }
+    .caucel-slide-content h3 {
+        font-size: 22px;
+    }
+    .caucel-slide-content p {
+        font-size: 14px;
+    }
+    .caucel-slider-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 768px) {
+    .caucel-slide img {
+        max-height: 300px; /* Reducir altura para tablets */
+    }
+    .caucel-slide-content {
+        padding: 8px 16px;
+    }
+    .caucel-slide-content h3 {
+        font-size: 20px;
+    }
+    .caucel-slide-content p {
+        font-size: 14px;
+    }
+    .caucel-slider-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+/* Teléfonos (pantallas pequeñas) */
+@media (max-width: 480px) {
+    .caucel-slide img {
+        max-height: 200px; /* Reducir altura para teléfonos */
+    }
+    .caucel-slide-content {
+        padding: 5px 10px;
+    }
+    .caucel-slide-content h3 {
+        font-size: 18px;
+    }
+    .caucel-slide-content p {
+        font-size: 12px;
+    }
+    .caucel-slider-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
