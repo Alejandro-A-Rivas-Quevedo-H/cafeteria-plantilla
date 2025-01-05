@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./style/header-caucel.css">
     <link rel="stylesheet" href="./style/presentation-caucel.css">
     <link rel="stylesheet" href="./style/caucel-about-us.css">
+    <link rel="stylesheet" href="./style/caucel-events.css">
 
     <!-- FUENTES -->
 
@@ -94,10 +95,74 @@
             </div>
         </div>
     </section>
+
+    <!-- EVENTS -->
+    
+    <section class="caucel-events">
+        <div class="events-header">
+            <span class="events-subtitle">Eventos</span>
+            <h2 class="events-title">Eventos destacados</h2>
+        </div>
+        <div class="events-list">
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="event-day">25</span>
+                    <span class="event-month">Abril</span>
+                </div>
+                <p class="event-description">
+                    Conoce este nuevo proyecto residencial, diseñado para ofrecer confort y elegancia. Presentación especial y recorrido guiado.
+                </p>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="event-day">15</span>
+                    <span class="event-month">Mayo</span>
+                </div>
+                <p class="event-description">
+                    Asiste a nuestro evento de preventa exclusivo, donde podrás conocer más sobre la ubicación y las características del proyecto.
+                </p>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="event-day">19</span>
+                    <span class="event-month">Junio</span>
+                </div>
+                <p class="event-description">
+                    Charla informativa sobre las ventajas de invertir en bienes raíces. No te pierdas esta oportunidad de aprender con expertos.
+                </p>
+            </div>
+        </div>
+        <a href="#" class="events-button">Ver más</a>
+    
+        <!-- Slider manual debajo del botón -->
+        <section id="events-slider">
+            <div class="caucel-slider-container">
+                <div class="caucel-slide">
+                    <img src="./archivos/img/events-img/rock1.jpeg" alt="Evento 1">
+                    <div class="caucel-slide-content">
+                        <h3>RETROALIMENTACIÓN</h3>
+                        <p> Exclusivo restaurante de Mérida, la mejor manera de obtener comida increíble de los mejores chefs de la ciudad. </p>
+                    </div>
+                </div>
+                <div class="caucel-slide">
+                    <img src="./archivos/img/events-img/love-romantic2.jpg" alt="Evento 2">
+                    <div class="caucel-slide-content">
+                        <h3>RETROALIMENTACIÓN</h3>
+                        <p>Exclusivo restaurante de Mérida, la mejor manera de obtener comida increíble de los mejores chefs de la ciudad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="caucel-slider-controls">
+                <button id="prev-slide" class="caucel-slider-button">❮</button>
+                <button id="next-slide" class="caucel-slider-button">❯</button>
+            </div>
+        </section>
+        
     
     
 
     <script src="./js/index.js"></script>
+    <script src="./js/caucelSlide.js"></script>
 </body>
 
 </html>
