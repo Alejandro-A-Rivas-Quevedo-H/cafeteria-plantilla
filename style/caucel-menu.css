@@ -1,0 +1,130 @@
+/* Estilos para la sección del menú de la cafetería de Caucel */
+#caucel-menu {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.menu-caucel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-caucel-subtitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu-caucel-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+.menu-caucel-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.menu-caucel-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-caucel-dish {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #333;
+}
+.menu-caucel-price {
+    font-size: 16px;
+    color: #777;
+}
+.menu-caucel-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsividad */
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1200px) {
+    .menu-caucel-title {
+        font-size: 42px;
+    }
+    .menu-caucel-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu-caucel-item {
+        padding: 30px;
+    }
+}
+
+/* Pantallas medianas (laptops y tablets en horizontal) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .menu-caucel-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .menu-caucel-title {
+        font-size: 32px;
+    }
+    .menu-caucel-dish {
+        font-size: 18px;
+    }
+    .menu-caucel-price {
+        font-size: 14px;
+    }
+    .menu-caucel-description {
+        font-size: 13px;
+    }
+}
+
+/* Pantallas pequeñas (tablets en vertical y smartphones grandes) */
+@media (max-width: 767px) and (min-width: 480px) {
+    .menu-caucel-items {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .menu-caucel-title {
+        font-size: 28px;
+    }
+    .menu-caucel-dish {
+        font-size: 18px;
+    }
+    .menu-caucel-price {
+        font-size: 14px;
+    }
+    .menu-caucel-description {
+        font-size: 13px;
+    }
+}
+
+/* Pantallas muy pequeñas (smartphones pequeños) */
+@media (max-width: 479px) {
+    .menu-caucel-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .menu-caucel-title {
+        font-size: 24px;
+    }
+    .menu-caucel-dish {
+        font-size: 16px;
+    }
+    .menu-caucel-price {
+        font-size: 14px;
+    }
+    .menu-caucel-description {
+        font-size: 12px;
+    }
+    .menu-caucel-item {
+        padding: 15px;
+    }
+}
