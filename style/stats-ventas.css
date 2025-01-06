@@ -1,0 +1,160 @@
+/* Sección de estadísticas */
+#caucel-stats {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.stats-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stats-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 80px;
+}
+
+.stats-subtitle {
+  font-size: 1rem;
+  color: #666;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.stat-item {
+  text-align: center;
+  max-width: 150px;
+  flex: 1 1 200px; /* Flexibilidad para ajustarse a las pantallas más pequeñas */
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #555;
+}
+
+.stat-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  .stats-container {
+    justify-content: space-between; /* Optimiza el espaciado en pantallas grandes (laptops) */
+  }
+
+  .stat-item {
+    max-width: 180px;
+  }
+
+  .stat-number {
+    font-size: 30px; /* Ajustar tamaño de fuente para pantallas grandes */
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .stats-title {
+    font-size: 1.8rem; /* Título un poco más pequeño en tablets */
+  }
+
+  .stats-subtitle {
+    font-size: 0.9rem; /* Ajustar subtítulo en tablets */
+  }
+
+  .stat-item {
+    max-width: 180px; /* Ajuste de tamaño de los items para pantallas más pequeñas */
+  }
+
+  .stat-number {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Más espacio entre los items en dispositivos móviles */
+  }
+
+  .stat-item {
+    max-width: 250px; /* Asegura que los items no se vean demasiado pequeños */
+  }
+
+  .stat-number {
+    font-size: 28px; /* Tamaño más pequeño para pantallas móviles */
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+
+  .stat-circle {
+    width: 120px;
+    height: 120px;
+    font-size: 14px; /* Ajusta el tamaño del círculo en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-title {
+    font-size: 1.6rem; /* Título más pequeño en pantallas muy pequeñas */
+  }
+
+  .stats-subtitle {
+    font-size: 0.8rem; /* Ajuste de subtítulo en pantallas muy pequeñas */
+  }
+
+  .stat-number {
+    font-size: 24px; /* Ajusta el tamaño de los números para pantallas muy pequeñas */
+  }
+
+  .stat-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 12px; /* Ajuste del círculo en pantallas extremadamente pequeñas */
+  }
+}
