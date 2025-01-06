@@ -249,29 +249,33 @@
 
         <!-- FORMULARIO -->
 
-        <form action="https://formsubmit.co/00314143alex@gmail.com" method="post" class="caucel-form">
-            <h3 class="caucel-title">Contáctanos</h3>
-            <h1 class="caucel-header">Habla con Caucel Cafetería</h1>
+        <section class="caucel-contact-section">
+            <div class="caucel-contact-container">
+                <h1 class="caucel-contact-header">Contáctanos</h1>
+                <h3 class="caucel-contact-title">El mejor café a tu alcance</h3>
+                <form action="https://formsubmit.co/00314143alex@gmail.com" method="post" class="caucel-contact-form">
+                    
+                    <input type="text" id="name" name="name" class="caucel-contact-input"
+                        placeholder="Ingresa tu nombre" required>
 
-            <label for="name" class="caucel-label">Nombre</label>
-            <input type="text" id="name" name="name" class="caucel-input" placeholder="Ingresa tu nombre" required>
+                    <input type="email" id="email" name="email" class="caucel-contact-input"
+                        placeholder="Ingresa un correo válido" required>
 
-            <label for="email" class="caucel-label">Correo Electrónico</label>
-            <input type="email" id="email" name="email" class="caucel-input" placeholder="Ingresa un correo válido"
-                required>
+                    <div class="caucel-contact-terms">
+                        <input type="checkbox" id="terms" name="terms" class="caucel-contact-checkbox" required>
+                        <label for="terms" class="caucel-contact-label">
+                            Acepto los <a href="#" class="caucel-contact-link">Términos y Condiciones</a>
+                        </label>
+                    </div>
 
-            <div class="caucel-terms">
-                <input type="checkbox" id="terms" name="terms" class="caucel-checkbox" required>
-                <label for="terms" class="caucel-label">Acepto los <a href="#" class="caucel-link">Términos y
-                        Condiciones</a></label>
+                    <button type="submit" class="caucel-contact-button">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             </div>
+        </section>
 
-            <button type="submit" class="caucel-button">Enviar</button>
-        </form>
-
-
-
-
+        
         <script src="./js/index.js"></script>
         <script src="./js/caucelSlide.js"></script>
         <script src="./js/caucelStats.js"></script>
