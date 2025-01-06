@@ -1,0 +1,158 @@
+.caucel-contact-form {
+  font-family: "ROBOTO", sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.caucel-contact-title {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.caucel-contact-header {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.caucel-contact-label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #4b3832;
+}
+
+.caucel-contact-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+}
+
+.caucel-contact-terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+.caucel-contact-checkbox {
+  margin-right: 8px;
+}
+
+.caucel-contact-label {
+  margin: 0;
+  font-weight: normal;
+}
+
+.caucel-contact-link {
+  color: #478ac9;
+  text-decoration: none;
+}
+
+.caucel-contact-button {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.caucel-contact-button:hover {
+  background-color: #18181a;
+  color: white;
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+  .caucel-contact-form {
+    padding: 25px;
+    max-width: 600px;
+  }
+
+  .caucel-contact-title {
+    font-size: 2.2rem;
+  }
+
+  .caucel-contact-header {
+    font-size: 1.1rem;
+  }
+
+  .caucel-contact-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .caucel-contact-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .caucel-contact-title {
+    font-size: 2rem;
+  }
+
+  .caucel-contact-header {
+    font-size: 1rem;
+  }
+
+  .caucel-contact-input {
+    padding: 8px;
+  }
+
+  .caucel-contact-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .caucel-contact-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .caucel-contact-title {
+    font-size: 1.8rem;
+  }
+
+  .caucel-contact-header {
+    font-size: 0.9rem;
+  }
+
+  .caucel-contact-input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .caucel-contact-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .caucel-contact-terms {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .caucel-contact-checkbox {
+    margin-bottom: 5px;
+  }
+}
