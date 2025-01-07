@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       coffeeCounters.forEach((counter) => {
         const target = +counter.getAttribute("data-target"); 
         let current = 0;
-        const increment = target / 350; // Ajusta la velocidad del conteo
+        const increment = target / 200; // Ajusta la velocidad del conteo
 
         const updateCoffeeCount = () => {
           if (current < target) {

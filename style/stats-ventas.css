@@ -2,7 +2,7 @@
 #caucel-stats {
   padding: 50px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: rgb(248, 248, 248)
 }
 
 .stats-container {
@@ -141,11 +141,11 @@
 
 @media (max-width: 480px) {
   .stats-title {
-    font-size: 1.6rem; /* Título más pequeño en pantallas muy pequeñas */
+    font-size: 24px; /* Título más pequeño en pantallas muy pequeñas */
   }
 
   .stats-subtitle {
-    font-size: 0.8rem; /* Ajuste de subtítulo en pantallas muy pequeñas */
+    font-size: 0.9rem; /* Ajuste de subtítulo en pantallas muy pequeñas */
   }
 
   .stat-number {

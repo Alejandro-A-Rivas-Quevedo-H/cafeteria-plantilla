@@ -102,6 +102,9 @@
 }
 
 @media (max-width: 768px) {
+    .about-us-subtitle{
+        font-size: 0.9rem;
+    }
     .about-us-title {
         font-size: 2rem;
     }
@@ -125,7 +128,7 @@
     }
 
     .about-us-title {
-        font-size: 1.8rem;
+        font-size: 24px;
     }
 
     .about-us-gallery {

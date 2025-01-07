@@ -90,6 +90,9 @@
 
 /* Responsividad */
 @media (max-width: 768px) {
+    .events-subtitle {
+        font-size: 0.9rem;
+    }
     .events-title {
         font-size: 2rem;
     }
@@ -105,7 +108,7 @@
 
 @media (max-width: 480px) {
     .events-title {
-        font-size: 1.8rem;
+        font-size: 24px;
     }
 
     .events-list {
@@ -154,13 +157,14 @@
     border-radius: 10px;
 }
 .caucel-slide-content h3 {
-    font-size: 24px;
+    font-size: 34px;
     margin: 0;
     font-weight: bold;
 }
 .caucel-slide-content p {
-    font-size: 16px;
-    margin: 5px 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 0;
 }
 .caucel-slider-controls {
     position: absolute;
