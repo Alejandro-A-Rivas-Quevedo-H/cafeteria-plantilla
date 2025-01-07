@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
     padding: 0 20px; /* Para evitar que el contenido se salga en pantallas más pequeñas */
 }
 
@@ -25,6 +24,7 @@
     z-index: 1;
     max-width: 90%;
     padding: 0 10px; /* Evita que el contenido se desborde */
+    color: white;
 }
 
 /* Estilos del logo */

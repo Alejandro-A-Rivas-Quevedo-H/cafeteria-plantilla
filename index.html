@@ -42,21 +42,24 @@
 <body>
 
     <button class="caucel-menu-toggle" id="menu-toggle">
-        <span class="material-symbols-outlined">menu</span>
+        <img src="./archivos/img/header-img/menu-cafeteria.svg" alt="Abrir menú" style="width: 24px; height: 24px;">
     </button>
     <nav class="caucel-menu" id="caucel-menu">
         <button class="caucel-menu-close" id="menu-close">
             <span class="material-symbols-outlined">close</span>
         </button>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#section-menu-caucel2">Menú</a></li>
+            <li><a href="#contact">Contáctanos</a></li>
         </ul>
     </nav>
 
-    <section class="caucel-presentation">
+
+
+    <section class="caucel-presentation" id="inicio">
         <video class="caucel-presentation-video" autoplay muted loop>
             <source src="./archivos/video/SPOT CAFÉ ☕️ .mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
@@ -71,7 +74,7 @@
     </section>
 
     <!-- ABOUT US-->
-    <section class="caucel-about-us">
+    <section class="caucel-about-us"  id="about">
         <h2 class="about-us-subtitle">Sobre Nosotros</h2>
         <h1 class="about-us-title">Descubre Nuestra Historia</h1>
         <div class="about-us-gallery">
@@ -107,7 +110,7 @@
 
     <!-- EVENTS -->
 
-    <section class="caucel-events">
+    <section class="caucel-events"   id="services">
         <div class="events-header">
             <span class="events-subtitle">Eventos</span>
             <h2 class="events-title">Eventos destacados</h2>
@@ -119,8 +122,8 @@
                     <span class="event-month">Abril</span>
                 </div>
                 <p class="event-description">
-                    Conoce este nuevo proyecto residencial, diseñado para ofrecer confort y elegancia. Presentación
-                    especial y recorrido guiado.
+                    Conoce, nuestra tematica de nuevo año con nosotros con los mejores café de la 
+                    ciudad.
                 </p>
             </div>
             <div class="event-item">
@@ -129,8 +132,8 @@
                     <span class="event-month">Mayo</span>
                 </div>
                 <p class="event-description">
-                    Asiste a nuestro evento de preventa exclusivo, donde podrás conocer más sobre la ubicación y las
-                    características del proyecto.
+                    Asiste a nuestro evento de preventa exclusivo, donde podrás conocer más sobre la ubicación de
+                    nuestra nueva surcursal.
                 </p>
             </div>
             <div class="event-item">
@@ -139,8 +142,7 @@
                     <span class="event-month">Junio</span>
                 </div>
                 <p class="event-description">
-                    Charla informativa sobre las ventajas de invertir en bienes raíces. No te pierdas esta oportunidad
-                    de aprender con expertos.
+                    Charla informativa sobre las ventajas de tomar café
                 </p>
             </div>
         </div>
@@ -174,167 +176,167 @@
     </section>
 
 
-        <!-- MENU -->
-        <section id="section-menu-caucel2">
-            <div class="menu-caucel2-container">
-                <h4 class="menu-caucel2-subtitle">NUESTRO MENÚ</h4>
-                <h2 class="menu-caucel2-title">Sabores de Caucel</h2>
-                <div class="menu-caucel2-items">
-                    <div class="menu-caucel2-item">
-                        <h3 class="menu-caucel2-dish">CAFÉ ARTESANAL <span class="menu-caucel2-price">/ $45</span></h3>
-                        <p class="menu-caucel2-description">Granos seleccionados de Chiapas / Tueste medio / Notas a
-                            chocolate y nuez</p>
-                    </div>
-                    <div class="menu-caucel2-item">
-                        <h3 class="menu-caucel2-dish">PANQUÉ DE ELOTE <span class="menu-caucel2-price">/ $30</span></h3>
-                        <p class="menu-caucel2-description">Elaborado con maíz criollo / Acompañado de miel y
-                            mantequilla</p>
-                    </div>
-                    <div class="menu-caucel2-item">
-                        <h3 class="menu-caucel2-dish">TÉ DE MANZANILLA <span class="menu-caucel2-price">/ $35</span>
-                        </h3>
-                        <p class="menu-caucel2-description">Infusión natural de manzanilla orgánica / Miel de abeja y
-                            limón</p>
-                    </div>
-                    <div class="menu-caucel2-item">
-                        <h3 class="menu-caucel2-dish">CHILAQUILES CAUCEL <span class="menu-caucel2-price">/ $85</span>
-                        </h3>
-                        <p class="menu-caucel2-description">Tortillas recién fritas / Salsa roja o verde / Pollo
-                            desmenuzado / Crema y queso</p>
-                    </div>
-                    <div class="menu-caucel2-item">
-                        <h3 class="menu-caucel2-dish">BAGUETTE RÚSTICO <span class="menu-caucel2-price">/ $60</span>
-                        </h3>
-                        <p class="menu-caucel2-description">Pan artesanal / Jamón serrano / Queso manchego / Rúcula
-                            fresca</p>
-                    </div>
-                    <div class="menu-caucel2-item">
-                        <h3 class="menu-caucel2-dish">MOUSSE DE CHOCOLATE <span class="menu-caucel2-price">/ $50</span>
-                        </h3>
-                        <p class="menu-caucel2-description">Postre cremoso / Cacao al 70% / Topping de frutas frescas
-                        </p>
-                    </div>
+    <!-- MENU -->
+    <section id="section-menu-caucel2">
+        <div class="menu-caucel2-container">
+            <h4 class="menu-caucel2-subtitle">NUESTRO MENÚ</h4>
+            <h2 class="menu-caucel2-title">Sabores de Caucel</h2>
+            <div class="menu-caucel2-items">
+                <div class="menu-caucel2-item">
+                    <h3 class="menu-caucel2-dish">CAFÉ ARTESANAL <span class="menu-caucel2-price">/ $45</span></h3>
+                    <p class="menu-caucel2-description">Granos seleccionados de Chiapas / Tueste medio / Notas a
+                        chocolate y nuez</p>
+                </div>
+                <div class="menu-caucel2-item">
+                    <h3 class="menu-caucel2-dish">PANQUÉ DE ELOTE <span class="menu-caucel2-price">/ $30</span></h3>
+                    <p class="menu-caucel2-description">Elaborado con maíz criollo / Acompañado de miel y
+                        mantequilla</p>
+                </div>
+                <div class="menu-caucel2-item">
+                    <h3 class="menu-caucel2-dish">TÉ DE MANZANILLA <span class="menu-caucel2-price">/ $35</span>
+                    </h3>
+                    <p class="menu-caucel2-description">Infusión natural de manzanilla orgánica / Miel de abeja y
+                        limón</p>
+                </div>
+                <div class="menu-caucel2-item">
+                    <h3 class="menu-caucel2-dish">CHILAQUILES CAUCEL <span class="menu-caucel2-price">/ $85</span>
+                    </h3>
+                    <p class="menu-caucel2-description">Tortillas recién fritas / Salsa roja o verde / Pollo
+                        desmenuzado / Crema y queso</p>
+                </div>
+                <div class="menu-caucel2-item">
+                    <h3 class="menu-caucel2-dish">BAGUETTE RÚSTICO <span class="menu-caucel2-price">/ $60</span>
+                    </h3>
+                    <p class="menu-caucel2-description">Pan artesanal / Jamón serrano / Queso manchego / Rúcula
+                        fresca</p>
+                </div>
+                <div class="menu-caucel2-item">
+                    <h3 class="menu-caucel2-dish">MOUSSE DE CHOCOLATE <span class="menu-caucel2-price">/ $50</span>
+                    </h3>
+                    <p class="menu-caucel2-description">Postre cremoso / Cacao al 70% / Topping de frutas frescas
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- STATS-VENTAS -->
-        <section id="caucel-stats">
-            <div class="stats-header">
-                <h2 class="stats-subtitle">Ventas</h2>
-                <p class="stats-title">Nuestros productos más vendidos</p>
+    <!-- STATS-VENTAS -->
+    <section id="caucel-stats"> 
+        <div class="stats-header">
+            <h2 class="stats-subtitle">Ventas</h2>
+            <p class="stats-title">Nuestros productos más vendidos</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-item">
+                <img src="./archivos/img/stats-img/coffe1.svg" alt="Chicken Icon" class="stat-icon" />
+                <h3 class="stat-number" data-target="840">0</h3>
+                <p class="stat-label">Cafés</p>
             </div>
-            <div class="stats-container">
-                <div class="stat-item">
-                    <img src="./archivos/img/stats-img/coffe1.svg" alt="Chicken Icon" class="stat-icon" />
-                    <h3 class="stat-number" data-target="840">0</h3>
-                    <p class="stat-label">Cafés</p>
-                </div>
-                <div class="stat-item">
-                    <img src="./archivos/img/stats-img/frappe2.svg" alt="Rice Icon" class="stat-icon" />
-                    <h3 class="stat-number" data-target="900">0</h3>
-                    <p class="stat-label">Frappes</p>
-                </div>
-                <div class="stat-item">
-                    <img src="./archivos/img/stats-img/croissants3.svg" alt="Croissant Icon" class="stat-icon" />
-                    <h3 class="stat-number" data-target="450">0</h3>
-                    <p class="stat-label">Croissants</p>
-                </div>
-                <div class="stat-item stat-highlight">
-                    <div class="stat-circle">
-                        <p>Cocinamos<br />todos los días</p>
-                    </div>
-                </div>
+            <div class="stat-item">
+                <img src="./archivos/img/stats-img/frappe2.svg" alt="Rice Icon" class="stat-icon" />
+                <h3 class="stat-number" data-target="900">0</h3>
+                <p class="stat-label">Frappes</p>
             </div>
-        </section>
-
-        <!-- FORMULARIO -->
-
-        <section class="caucel-contact-section">
-            <div class="caucel-contact-container">
-                <h1 class="caucel-contact-header">Contáctanos</h1>
-                <h3 class="caucel-contact-title">El mejor café a tu alcance</h3>
-                <form action="https://formsubmit.co/00314143alex@gmail.com" method="post" class="caucel-contact-form">
-
-                    <input type="text" id="name" name="name" class="caucel-contact-input"
-                        placeholder="Ingresa tu nombre" required>
-
-                    <input type="email" id="email" name="email" class="caucel-contact-input"
-                        placeholder="Ingresa un correo válido" required>
-
-                    <div class="caucel-contact-terms">
-                        <input type="checkbox" id="terms" name="terms" class="caucel-contact-checkbox" required>
-                        <label for="terms" class="caucel-contact-label">
-                            Acepto los <a href="#" class="caucel-contact-link">Términos y Condiciones</a>
-                        </label>
-                    </div>
-
-                    <button type="submit" class="caucel-contact-button">Enviar</button>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
+            <div class="stat-item">
+                <img src="./archivos/img/stats-img/croissants3.svg" alt="Croissant Icon" class="stat-icon" />
+                <h3 class="stat-number" data-target="450">0</h3>
+                <p class="stat-label">Croissants</p>
             </div>
-        </section>
-
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer-container">
-                <!-- About Section -->
-                <div class="footer-section footer-about-caucel">
-                    <img src="./archivos/img/restuarant-logo.png" alt="Logo de Caucel Café" class="footer-logo-caucel">
-                    <p>En <strong>Caucel Café</strong>, producimos y servimos el mejor café artesanal de Yucatán.
-                        Nuestro compromiso es ofrecerte una experiencia única con sabores auténticos.</p>
-                    <div class="footer-social-icons-caucel">
-                        <a href="#" aria-label="LinkedIn de Caucel Café" class="social-link"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Facebook de Caucel Café" class="social-link"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter de Caucel Café" class="social-link"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram de Caucel Café" class="social-link"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Site Navigation -->
-                <div class="footer-section footer-links-caucel">
-                    <h4>Explora Caucel Café</h4>
-                    <ul class="footer-nav-list">
-                        <li><a href="#home" class="footer-nav-link">Inicio</a></li>
-                        <li><a href="#services" class="footer-nav-link">Servicios</a></li>
-                        <li><a href="#testimonials" class="footer-nav-link">Testimonios</a></li>
-                        <li><a href="#portfolio" class="footer-nav-link">Galería</a></li>
-                        <li><a href="#our-team" class="footer-nav-link">Nuestro equipo</a></li>
-                    </ul>
-                </div>
-
-                <!-- Help & Support -->
-                <div class="footer-section footer-support-caucel">
-                    <h4>Ayuda y Soporte</h4>
-                    <ul class="footer-support-list">
-                        <li><a href="#" aria-label="Página de contacto" class="footer-support-link">Contacto</a></li>
-                        <li><a href="#" aria-label="Términos y condiciones" class="footer-support-link">Términos y
-                                Condiciones</a></li>
-                    </ul>
+            <div class="stat-item stat-highlight">
+                <div class="stat-circle">
+                    <p>Preparamos<br />la mejor calidad</p>
                 </div>
             </div>
-            <hr class="footer-divider">
-            <div class="footer-powered-by-caucel">
-                <p>Desarrollado por <a href="https://halligatorproductions.com" target="_blank"
-                        aria-label="Sitio web de Halligator Productions" class="footer-powered-link">Halligator
-                        Productions</a></p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+
+    <section class="caucel-contact-section" id="contact">
+        <div class="caucel-contact-container">
+            <h1 class="caucel-contact-header">Contáctanos</h1>
+            <h3 class="caucel-contact-title">El mejor café a tu alcance</h3>
+            <form action="https://formsubmit.co/00314143alex@gmail.com" method="post" class="caucel-contact-form">
+
+                <input type="text" id="name" name="name" class="caucel-contact-input" placeholder="Ingresa tu nombre"
+                    required>
+
+                <input type="email" id="email" name="email" class="caucel-contact-input"
+                    placeholder="Ingresa un correo válido" required>
+
+                <div class="caucel-contact-terms">
+                    <input type="checkbox" id="terms" name="terms" class="caucel-contact-checkbox" required>
+                    <label for="terms" class="caucel-contact-label">
+                        Acepto los <a href="#" class="caucel-contact-link">Términos y Condiciones</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="caucel-contact-button">Enviar</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section footer-about-caucel">
+                <img src="./archivos/img/restuarant-logo.png" alt="Logo de Caucel Café" class="footer-logo-caucel">
+                <p>En <strong>Caucel Café</strong>, producimos y servimos el mejor café artesanal de Yucatán.
+                    Nuestro compromiso es ofrecerte una experiencia única con sabores auténticos.</p>
+                <div class="footer-social-icons-caucel">
+                    <a href="#" aria-label="LinkedIn de Caucel Café" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook de Caucel Café" class="social-link"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter de Caucel Café" class="social-link"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram de Caucel Café" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </footer>
+
+            <!-- Site Navigation -->
+            <div class="footer-section footer-links-caucel">
+                <h4>Explora Caucel Café</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="#inicio" class="footer-nav-link">Inicio</a></li>
+                    <li><a href="#about" class="footer-nav-link">Acerca de</a></li>
+                    <li><a href="#services" class="footer-nav-link">Servicios</a></li>
+                    <li><a href="#section-menu-caucel2" class="footer-nav-link">Menú</a></li>
+                    <li><a href="#contact" class="footer-nav-link">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <!-- Help & Support -->
+            <div class="footer-section footer-support-caucel">
+                <h4>Ayuda y Soporte</h4>
+                <ul class="footer-support-list">
+                    <li><a href="#" aria-label="Página de contacto" class="footer-support-link">Contacto</a></li>
+                    <li><a href="#" aria-label="Términos y condiciones" class="footer-support-link">Términos y
+                            Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-powered-by-caucel">
+            <p>Desarrollado por <a href="https://halligatorproductions.com" target="_blank"
+                    aria-label="Sitio web de Halligator Productions" class="footer-powered-link">Halligator
+                    Productions</a></p>
+        </div>
+    </footer>
 
 
 
 
 
-        <script src="./js/index.js"></script>
-        <script src="./js/caucelSlide.js"></script>
-        <script src="./js/caucelStats.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/caucelSlide.js"></script>
+    <script src="./js/caucelStats.js"></script>
 </body>
 
 </html>

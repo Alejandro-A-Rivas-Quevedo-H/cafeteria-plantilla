@@ -10,9 +10,9 @@
     margin: 0 auto;
 }
 .menu-caucel2-subtitle {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2px;
-    color: #555;
+    color: #666;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -88,6 +88,9 @@
 
 /* Pantallas pequeñas (tablets en vertical y smartphones grandes) */
 @media (max-width: 767px) and (min-width: 480px) {
+    .menu-caucel2-subtitle{
+        font-size: 0.9rem;
+    }
     .menu-caucel2-items {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -111,6 +114,9 @@
     .menu-caucel2-items {
         grid-template-columns: 1fr;
         gap: 15px;
+    } 
+    .menu-caucel2-subtitle{
+        font-size: 0.9rem;
     }
     .menu-caucel2-title {
         font-size: 24px;
