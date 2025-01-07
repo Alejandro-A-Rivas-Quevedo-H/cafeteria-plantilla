@@ -1,3 +1,7 @@
+.caucel-contact-section .caucel-contact-container{
+  padding: 100px;
+  background-color: #f8f8f8;
+}
 .caucel-contact-form {
   font-family: "ROBOTO", sans-serif;
   max-width: 500px;
@@ -10,6 +14,7 @@
 }
 
 .caucel-contact-title {
+  text-align: center;
   color: #333;
   margin-bottom: 30px;
   font-size: 2.5rem;
@@ -17,6 +22,7 @@
 }
 
 .caucel-contact-header {
+  text-align: center;
   color: #666;
   margin-bottom: 10px;
   font-size: 1.2rem;
