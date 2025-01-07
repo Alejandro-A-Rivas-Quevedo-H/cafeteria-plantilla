@@ -1,0 +1,169 @@
+
+.footer {
+    background-color: #000; /* Fondo negro */
+    padding: 40px 0; /* Espaciado */
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    margin: 0; /* Eliminar márgenes */
+    border: none; /* Sin bordes */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por defecto */
+    gap: 20px;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* About Section */
+.footer-about-caucel {
+    text-align: left;
+}
+
+.footer-logo-caucel {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.footer-about-caucel p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-section.footer-links-caucel {
+    text-align: center;
+}
+.footer-section.footer-support-caucel {
+    text-align: center;
+}
+
+.footer-social-icons-caucel {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-link i {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-link:hover i {
+    color: #0073e6;
+}
+
+
+.footer-links-caucel h4,
+.footer-support-caucel h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-nav-list,
+.footer-support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav-link,
+.footer-support-link {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+}
+
+.footer-nav-link:hover,
+.footer-support-link:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+/* Footer Bottom */
+.footer-powered-by-caucel {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin: 0;
+    padding: 10px 0; /* Espaciado interno */
+}
+
+.footer-powered-link {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.footer-powered-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 0 15px; 
+    }
+
+    .footer-about-caucel {
+        text-align: center; 
+        padding: 0 30px; 
+    }
+
+    .footer-about-caucel p {
+        font-size: 14px; 
+        margin-bottom: 15px;
+    }
+
+    .footer-social-icons-caucel {
+        justify-content: center; 
+        margin: 15px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .footer-about-caucel {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .footer-about-caucel p {
+        font-size: 13px;
+        margin-bottom: 10px;
+        line-height: 1.6; 
+    }
+
+    .footer-logo-caucel {
+        width: 80px; 
+        margin: 0 auto; 
+    }
+
+    .footer-powered-by-caucel {
+        font-size: 10px;
+    }
+}
