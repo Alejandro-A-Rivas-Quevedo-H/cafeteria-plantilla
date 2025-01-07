@@ -30,7 +30,7 @@ body {
     transition: right 0.3s ease-in-out; /* Animación suave */
     overflow: hidden; /* Previene el desbordamiento del contenido */
   }
-  
+
   /* Activación del menú */
   .caucel-menu.active {
     right: 0; 
