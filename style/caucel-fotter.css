@@ -118,26 +118,43 @@
 
 @media (max-width: 768px) {
     .footer-container {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-        padding: 0 15px; 
+        grid-template-columns: 1fr;
+        gap: 30px; /* Aumentar espacio entre secciones */
+        padding: 0 20px; /* Ajustar espaciado */
     }
 
     .footer-about-caucel {
         text-align: center; 
-        padding: 0 30px; 
+        padding: 0 40px; /* Más espacio en los laterales */
     }
 
     .footer-about-caucel p {
-        font-size: 14px; 
-        margin-bottom: 15px;
+        font-size: 15px; /* Tamaño más legible */
+        margin-bottom: 20px; /* Espacio adicional entre párrafos */
+        line-height: 1.6; /* Mejorar legibilidad */
     }
 
     .footer-social-icons-caucel {
         justify-content: center; 
-        margin: 15px 0;
+        margin: 20px 0; /* Espaciado más consistente */
+    }
+
+    .footer-links-caucel,
+    .footer-support-caucel {
+        text-align: center; 
+    }
+
+    .footer-nav-list,
+    .footer-support-list {
+        gap: 10px; /* Espaciado entre enlaces */
+    }
+
+    .footer-powered-by-caucel {
+        font-size: 12px; /* Texto más legible en tablets */
+        padding: 15px 0; /* Más espacio superior e inferior */
     }
 }
+
 
 
 @media (max-width: 480px) {
