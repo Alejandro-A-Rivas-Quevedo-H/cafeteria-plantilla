@@ -10,6 +10,18 @@
     padding: 0 20px; /* Para evitar que el contenido se salga en pantallas más pequeñas */
 }
 
+
+.caucel-presentation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+}
+
+
 .caucel-presentation-video {
     position: absolute;
     top: 0;
