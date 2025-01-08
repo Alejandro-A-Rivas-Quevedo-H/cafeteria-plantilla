@@ -56,7 +56,7 @@
 /* Pantallas grandes (desktop) */
 @media (min-width: 1200px) {
     .menu-caucel2-title {
-        font-size: 42px;
+        font-size: 40px;
     }
     .menu-caucel2-items {
         grid-template-columns: repeat(3, 1fr);
