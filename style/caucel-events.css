@@ -246,6 +246,10 @@
     .event-item {
         margin: 0 30px;
     }
+    .events-header {
+        padding-top: 55px;
+    }
+
     .caucel-slide img {
         max-height: 200px; /* Reducir altura para teléfonos */
     }
