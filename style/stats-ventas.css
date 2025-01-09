@@ -76,6 +76,15 @@
   line-height: 1.5;
 }
 
+/* Ancho máximo para el contenedor de estadísticas en pantallas muy grandes */
+@media (min-width: 1201px) {
+  .stats-container {
+    justify-content: space-between; /* Ajusta los elementos dentro del contenedor */
+    max-width: 1400px; /* Asegura que los elementos no se extiendan más allá del contenedor */
+    margin: 0 auto; /* Centra los elementos */
+  }
+}
+
 /* Responsividad */
 @media (max-width: 1200px) {
   .stats-container {

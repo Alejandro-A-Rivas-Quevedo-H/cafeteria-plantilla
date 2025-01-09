@@ -203,6 +203,23 @@
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Pantallas grandes (laptops y monitores grandes) */
+@media (min-width: 1200px) {
+    .caucel-slide img {
+        max-height: 700px; /* Incrementar altura para escritorio */
+    }
+    .caucel-slide-content h3 {
+        font-size: 36px;
+    }
+    .caucel-slide-content p {
+        font-size: 22px;
+    }
+    .caucel-slider-button {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}
+
 
 /* Pantallas grandes (laptops y monitores) */
 @media (max-width: 1200px) {
